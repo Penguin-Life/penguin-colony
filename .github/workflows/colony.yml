@@ -1,0 +1,48 @@
+name: 🐧 Update Penguin Colony
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # daily at 06:00 UTC
+  push:
+    branches: [main]
+  workflow_dispatch:       # manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  update-colony:
+    runs-on: ubuntu-latest
+    name: Generate colony SVG
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate penguin colony
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 colony.py ${{ github.repository_owner }} \
+            --token "$GITHUB_TOKEN" \
+            -n 50 \
+            -o colony.svg
+          echo "✅ Colony generated: $(wc -c < colony.svg) bytes"
+
+      - name: Commit & push SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add colony.svg
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "🐧 Update penguin colony [skip ci]"
+            git push
+            echo "✅ Colony committed and pushed!"
+          fi

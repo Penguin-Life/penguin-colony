@@ -1,0 +1,1066 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="770" height="760" viewBox="0 0 770 760">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020817"/>
+      <stop offset="40%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#111d2e"/>
+    </linearGradient>
+    <linearGradient id="aurora1" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0%" stop-color="#00ff87" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00ff87" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#60efff" stop-opacity="0.18"/>
+      <stop offset="70%" stop-color="#7c5cfc" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ff6bcd" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="aurora2" x1="0.2" y1="0" x2="0.8" y2="0.5">
+      <stop offset="0%" stop-color="#60efff" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#60efff" stop-opacity="0.08"/>
+      <stop offset="60%" stop-color="#00ff87" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#60efff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ice_grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2744"/>
+      <stop offset="50%" stop-color="#0f1b2d"/>
+      <stop offset="100%" stop-color="#080e1a"/>
+    </linearGradient>
+    <linearGradient id="ice_top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1a2744" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="aurora_blur">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <filter id="scarf_glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="770" height="760" fill="url(#sky)"/>
+
+  <!-- Aurora Borealis -->
+  <ellipse cx="231.0" cy="40" rx="385.0" ry="60" fill="url(#aurora1)" filter="url(#aurora_blur)">
+    <animate attributeName="rx" values="385.0;423.50000000000006;346.5;385.0" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="40;50;35;40" dur="6s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="539.0" cy="55" rx="308.0" ry="45" fill="url(#aurora2)" filter="url(#aurora_blur)">
+    <animate attributeName="rx" values="308.0;269.5;346.5;308.0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="55;45;60;55" dur="7s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Stars -->
+  <circle cx="484" cy="36" r="1.3" fill="white" opacity="0.78">
+      <animate attributeName="opacity" values="0.78;0.15600000000000003;0.78" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="99" cy="60" r="0.8" fill="white" opacity="0.55">
+      <animate attributeName="opacity" values="0.55;0.11000000000000001;0.55" dur="4.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="55" cy="17" r="0.5" fill="white" opacity="0.74">
+      <animate attributeName="opacity" values="0.74;0.148;0.74" dur="3.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="111" cy="36" r="0.6" fill="white" opacity="0.62">
+      <animate attributeName="opacity" values="0.62;0.124;0.62" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="187" cy="40" r="1.0" fill="white" opacity="0.82">
+      <animate attributeName="opacity" values="0.82;0.164;0.82" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="563" cy="17" r="0.5" fill="white" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.18000000000000002;0.9" dur="4.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="95" cy="35" r="0.6" fill="white" opacity="0.59">
+      <animate attributeName="opacity" values="0.59;0.118;0.59" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="410" cy="12" r="0.6" fill="white" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.06;0.3" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="465" cy="41" r="0.9" fill="white" opacity="0.87">
+      <animate attributeName="opacity" values="0.87;0.17400000000000002;0.87" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="569" cy="67" r="0.6" fill="white" opacity="0.48">
+      <animate attributeName="opacity" values="0.48;0.096;0.48" dur="4.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="593" cy="12" r="1.3" fill="white" opacity="0.33">
+      <animate attributeName="opacity" values="0.33;0.066;0.33" dur="3.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="514" cy="25" r="0.5" fill="white" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.12;0.6" dur="4.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="70" cy="13" r="1.2" fill="white" opacity="0.44">
+      <animate attributeName="opacity" values="0.44;0.08800000000000001;0.44" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="583" cy="36" r="1.1" fill="white" opacity="0.32">
+      <animate attributeName="opacity" values="0.32;0.064;0.32" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="673" cy="45" r="1.5" fill="white" opacity="0.42">
+      <animate attributeName="opacity" values="0.42;0.084;0.42" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="244" cy="38" r="0.9" fill="white" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.13999999999999999;0.7" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="323" cy="14" r="0.4" fill="white" opacity="0.67">
+      <animate attributeName="opacity" values="0.67;0.134;0.67" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="102" cy="14" r="1.0" fill="white" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.12;0.6" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="357" cy="13" r="1.5" fill="white" opacity="0.52">
+      <animate attributeName="opacity" values="0.52;0.10400000000000001;0.52" dur="2.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="556" cy="43" r="1.1" fill="white" opacity="0.89">
+      <animate attributeName="opacity" values="0.89;0.17800000000000002;0.89" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="8" cy="43" r="1.5" fill="white" opacity="0.36">
+      <animate attributeName="opacity" values="0.36;0.072;0.36" dur="4.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="270" cy="19" r="1.5" fill="white" opacity="0.75">
+      <animate attributeName="opacity" values="0.75;0.15000000000000002;0.75" dur="2.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="288" cy="31" r="1.3" fill="white" opacity="0.42">
+      <animate attributeName="opacity" values="0.42;0.084;0.42" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="270" cy="69" r="1.0" fill="white" opacity="0.84">
+      <animate attributeName="opacity" values="0.84;0.168;0.84" dur="4.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="94" cy="59" r="1.4" fill="white" opacity="0.33">
+      <animate attributeName="opacity" values="0.33;0.066;0.33" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="133" cy="38" r="0.6" fill="white" opacity="0.57">
+      <animate attributeName="opacity" values="0.57;0.11399999999999999;0.57" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="574" cy="6" r="0.5" fill="white" opacity="0.87">
+      <animate attributeName="opacity" values="0.87;0.17400000000000002;0.87" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="152" cy="9" r="1.4" fill="white" opacity="0.65">
+      <animate attributeName="opacity" values="0.65;0.13;0.65" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="130" cy="10" r="0.8" fill="white" opacity="0.84">
+      <animate attributeName="opacity" values="0.84;0.168;0.84" dur="3.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="40" cy="50" r="0.7" fill="white" opacity="0.45">
+      <animate attributeName="opacity" values="0.45;0.09000000000000001;0.45" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    
+
+  <!-- Snow -->
+  <circle cx="654" cy="114" r="0.6" fill="white" opacity="0.34">
+      <animate attributeName="cy" from="114" to="174" dur="4.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.34;0.10200000000000001;0.34" dur="4.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="754" cy="104" r="1.9" fill="white" opacity="0.65">
+      <animate attributeName="cy" from="104" to="164" dur="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.65;0.195;0.65" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="432" cy="32" r="0.6" fill="white" opacity="0.31">
+      <animate attributeName="cy" from="32" to="92" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.31;0.093;0.31" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="27" cy="574" r="0.9" fill="white" opacity="0.52">
+      <animate attributeName="cy" from="574" to="634" dur="5.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.52;0.156;0.52" dur="5.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="225" cy="459" r="1.7" fill="white" opacity="0.6">
+      <animate attributeName="cy" from="459" to="519" dur="3.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.18;0.6" dur="3.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="163" cy="432" r="1.2" fill="white" opacity="0.28">
+      <animate attributeName="cy" from="432" to="492" dur="7.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.28;0.084;0.28" dur="7.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="344" cy="104" r="0.7" fill="white" opacity="0.25">
+      <animate attributeName="cy" from="104" to="164" dur="7.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;0.075;0.25" dur="7.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="618" cy="270" r="2.1" fill="white" opacity="0.56">
+      <animate attributeName="cy" from="270" to="330" dur="5.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.56;0.168;0.56" dur="5.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="387" cy="80" r="1.6" fill="white" opacity="0.61">
+      <animate attributeName="cy" from="80" to="140" dur="6.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.61;0.183;0.61" dur="6.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="370" cy="591" r="0.9" fill="white" opacity="0.23">
+      <animate attributeName="cy" from="591" to="651" dur="6.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.23;0.069;0.23" dur="6.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="296" cy="81" r="2.2" fill="white" opacity="0.63">
+      <animate attributeName="cy" from="81" to="141" dur="4.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.63;0.189;0.63" dur="4.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="464" cy="650" r="2.2" fill="white" opacity="0.28">
+      <animate attributeName="cy" from="650" to="710" dur="4.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.28;0.084;0.28" dur="4.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="686" cy="273" r="1.9" fill="white" opacity="0.54">
+      <animate attributeName="cy" from="273" to="333" dur="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.54;0.162;0.54" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="650" cy="175" r="1.6" fill="white" opacity="0.32">
+      <animate attributeName="cy" from="175" to="235" dur="5.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.32;0.096;0.32" dur="5.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="276" cy="655" r="1.9" fill="white" opacity="0.31">
+      <animate attributeName="cy" from="655" to="715" dur="4.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.31;0.093;0.31" dur="4.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="57" cy="234" r="2.1" fill="white" opacity="0.6">
+      <animate attributeName="cy" from="234" to="294" dur="5.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.18;0.6" dur="5.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="67" cy="216" r="2.3" fill="white" opacity="0.48">
+      <animate attributeName="cy" from="216" to="276" dur="6.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.48;0.144;0.48" dur="6.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="217" cy="671" r="1.5" fill="white" opacity="0.64">
+      <animate attributeName="cy" from="671" to="731" dur="6.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.64;0.192;0.64" dur="6.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="146" cy="271" r="0.8" fill="white" opacity="0.57">
+      <animate attributeName="cy" from="271" to="331" dur="5.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.57;0.17099999999999999;0.57" dur="5.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="764" cy="598" r="1.4" fill="white" opacity="0.49">
+      <animate attributeName="cy" from="598" to="658" dur="4.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.49;0.147;0.49" dur="4.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="141" cy="521" r="1.5" fill="white" opacity="0.58">
+      <animate attributeName="cy" from="521" to="581" dur="7.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.58;0.174;0.58" dur="7.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="156" cy="642" r="0.8" fill="white" opacity="0.54">
+      <animate attributeName="cy" from="642" to="702" dur="6.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.54;0.162;0.54" dur="6.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="394" cy="390" r="1.7" fill="white" opacity="0.43">
+      <animate attributeName="cy" from="390" to="450" dur="4.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.43;0.129;0.43" dur="4.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="566" cy="11" r="1.9" fill="white" opacity="0.26">
+      <animate attributeName="cy" from="11" to="71" dur="7.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.26;0.078;0.26" dur="7.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="768" cy="273" r="2.0" fill="white" opacity="0.37">
+      <animate attributeName="cy" from="273" to="333" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.37;0.111;0.37" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="161" cy="464" r="0.5" fill="white" opacity="0.56">
+      <animate attributeName="cy" from="464" to="524" dur="6.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.56;0.168;0.56" dur="6.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="512" cy="182" r="1.5" fill="white" opacity="0.25">
+      <animate attributeName="cy" from="182" to="242" dur="6.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;0.075;0.25" dur="6.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="654" cy="519" r="1.7" fill="white" opacity="0.28">
+      <animate attributeName="cy" from="519" to="579" dur="6.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.28;0.084;0.28" dur="6.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="552" cy="543" r="2.3" fill="white" opacity="0.5">
+      <animate attributeName="cy" from="543" to="603" dur="5.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.15;0.5" dur="5.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="114" cy="371" r="2.3" fill="white" opacity="0.62">
+      <animate attributeName="cy" from="371" to="431" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.62;0.186;0.62" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="59" cy="246" r="2.3" fill="white" opacity="0.67">
+      <animate attributeName="cy" from="246" to="306" dur="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.67;0.201;0.67" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="497" cy="70" r="2.5" fill="white" opacity="0.47">
+      <animate attributeName="cy" from="70" to="130" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.47;0.141;0.47" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="675" cy="486" r="2.4" fill="white" opacity="0.28">
+      <animate attributeName="cy" from="486" to="546" dur="5.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.28;0.084;0.28" dur="5.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="621" cy="433" r="2.4" fill="white" opacity="0.66">
+      <animate attributeName="cy" from="433" to="493" dur="6.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.66;0.198;0.66" dur="6.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="706" cy="205" r="1.9" fill="white" opacity="0.4">
+      <animate attributeName="cy" from="205" to="265" dur="6.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.12;0.4" dur="6.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="382" cy="448" r="2.3" fill="white" opacity="0.43">
+      <animate attributeName="cy" from="448" to="508" dur="4.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.43;0.129;0.43" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="65" cy="346" r="0.5" fill="white" opacity="0.48">
+      <animate attributeName="cy" from="346" to="406" dur="5.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.48;0.144;0.48" dur="5.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="7" cy="72" r="1.9" fill="white" opacity="0.23">
+      <animate attributeName="cy" from="72" to="132" dur="3.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.23;0.069;0.23" dur="3.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="32" cy="338" r="0.6" fill="white" opacity="0.32">
+      <animate attributeName="cy" from="338" to="398" dur="6.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.32;0.096;0.32" dur="6.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="219" cy="552" r="0.8" fill="white" opacity="0.67">
+      <animate attributeName="cy" from="552" to="612" dur="5.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.67;0.201;0.67" dur="5.9s" repeatCount="indefinite"/>
+    </circle>
+    
+
+  <!-- Ice terrain -->
+  <polygon points="0,760 0,715 20,706 40,709 60,707 80,707 100,715 120,702 140,707 160,712 180,715 200,709 220,710 240,707 260,705 280,714 300,703 320,717 340,709 360,708 380,716 400,713 420,711 440,709 460,709 480,702 500,708 520,714 540,712 560,710 580,704 600,710 620,713 640,718 660,714 680,712 700,702 720,705 740,710 760,707 780,710 770,760" fill="url(#ice_grad)"/>
+  <polygon points="0,760 0,715 20,706 40,709 60,707 80,707 100,715 120,702 140,707 160,712 180,715 200,709 220,710 240,707 260,705 280,714 300,703 320,717 340,709 360,708 380,716 400,713 420,711 440,709 460,709 480,702 500,708 520,714 540,712 560,710 580,704 600,710 620,713 640,718 660,714 680,712 700,702 720,705 740,710 760,707 780,710 770,760" fill="url(#ice_top)"/>
+
+  <!-- Title -->
+  <text x="385" y="35" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,sans-serif" font-size="18" fill="white" font-weight="bold" filter="url(#glow)">🐧 vercel&#x27;s Penguin Colony</text>
+  <text x="385" y="56" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">20 repos · 3,446 total stars</text>
+
+<g transform="translate(125,140) rotate(-20)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0;-2,-3;0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-45)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(45)"/>
+  </g>
+  <!-- Label -->
+  <text x="125" y="169.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">v0-nanobanana-te..</text>
+  <text x="125" y="177.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">🥚</text>
+  
+  <ellipse cx="125" cy="161.0" rx="16.799999999999997" ry="4.199999999999999" fill="#58a6ff" opacity="0.3"/>
+    <ellipse cx="119.4" cy="162.4" rx="12.6" ry="2.8" fill="#79c0ff" opacity="0.2"/>
+<g transform="translate(255,140) rotate(-20)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0;-2,-3;0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-45)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(45)"/>
+  </g>
+  <!-- Label -->
+  <text x="255" y="169.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">grokcreativestud..</text>
+  <text x="255" y="177.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">⭐ 4</text>
+  
+  <ellipse cx="255" cy="161.0" rx="16.799999999999997" ry="4.199999999999999" fill="#58a6ff" opacity="0.3"/>
+    <ellipse cx="249.4" cy="162.4" rx="12.6" ry="2.8" fill="#79c0ff" opacity="0.2"/>
+<g transform="translate(385,140) rotate(-20)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0;-2,-3;0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#00ADD8" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#00ADD8" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-45)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(45)"/>
+  </g>
+  <!-- Label -->
+  <text x="385" y="169.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">bridge</text>
+  <text x="385" y="177.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">🥚</text>
+  
+  <ellipse cx="385" cy="161.0" rx="16.799999999999997" ry="4.199999999999999" fill="#58a6ff" opacity="0.3"/>
+    <ellipse cx="379.4" cy="162.4" rx="12.6" ry="2.8" fill="#79c0ff" opacity="0.2"/>
+<g transform="translate(515,140) rotate(-20)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0;-2,-3;0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-45)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(45)"/>
+  </g>
+  <!-- Label -->
+  <text x="515" y="169.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">v0-character-swa..</text>
+  <text x="515" y="177.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">⭐ 1</text>
+  
+  <ellipse cx="515" cy="161.0" rx="16.799999999999997" ry="4.199999999999999" fill="#58a6ff" opacity="0.3"/>
+    <ellipse cx="509.4" cy="162.4" rx="12.6" ry="2.8" fill="#79c0ff" opacity="0.2"/>
+<g transform="translate(645,140) rotate(-20)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0;-2,-3;0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="24.3" rx="14.4" ry="3.6" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="16.2" ry="22.5" fill="#1b1f23"/>
+    <ellipse cx="-5.4" cy="-4.5" rx="3.6" ry="10.8" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.7" rx="10.8" ry="16.2" fill="white"/>
+    <ellipse cx="-1.8" cy="0.0" rx="7.2" ry="10.8" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-25.2" r="11.700000000000001" fill="#1b1f23"/>
+    <circle cx="-3.6" cy="-28.8" r="4.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-8.1" cy="-22.5" r="3.15" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="8.1" cy="-22.5" r="3.15" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-4.5" cy="-27.0" r="2.7" fill="white"/><circle cx="4.5" cy="-27.0" r="2.7" fill="white"/><circle cx="-3.6" cy="-26.55" r="1.35" fill="#1b1f23"/><circle cx="5.4" cy="-26.55" r="1.35" fill="#1b1f23"/><circle cx="-3.15" cy="-27.0" r="0.54" fill="white"/><circle cx="5.8500000000000005" cy="-27.0" r="0.54" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-3.15,-21.6 3.15,-21.6 0,-17.1" fill="#f9826c"/>
+    <polygon points="-1.8,-21.150000000000002 1.8,-21.150000000000002 0,-18.45" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-13.5" y="-15.3" width="27.0" height="5.4" rx="2.7" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="8.1" y="-15.3" width="4.5" height="12.6" rx="2.25" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-13.5" y="-15.3" width="27.0" height="2.25" rx="1.35" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    
+    <!-- Flippers -->
+    <ellipse cx="-18.0" cy="-1.8" rx="4.5" ry="12.6" fill="#1b1f23" transform="rotate(-45)"/>
+    <ellipse cx="18.0" cy="-1.8" rx="4.5" ry="12.6" fill="#1b1f23" transform="rotate(45)"/>
+  </g>
+  <!-- Label -->
+  <text x="645" y="177.8" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="9.0" fill="#e6edf3" font-weight="600">sandbox</text>
+  <text x="645" y="188.6" text-anchor="middle" font-family="monospace" font-size="8.1" fill="#f0883e">⭐ 64</text>
+  
+  <ellipse cx="645" cy="167.0" rx="21.6" ry="5.4" fill="#58a6ff" opacity="0.3"/>
+    <ellipse cx="637.8" cy="168.8" rx="16.2" ry="3.6" fill="#79c0ff" opacity="0.2"/>
+<g transform="translate(125,280) rotate(0)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="24.3" rx="14.4" ry="3.6" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="16.2" ry="22.5" fill="#1b1f23"/>
+    <ellipse cx="-5.4" cy="-4.5" rx="3.6" ry="10.8" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.7" rx="10.8" ry="16.2" fill="white"/>
+    <ellipse cx="-1.8" cy="0.0" rx="7.2" ry="10.8" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-25.2" r="11.700000000000001" fill="#1b1f23"/>
+    <circle cx="-3.6" cy="-28.8" r="4.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-8.1" cy="-22.5" r="3.15" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="8.1" cy="-22.5" r="3.15" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-4.5" cy="-27.0" r="2.7" fill="white"/><circle cx="4.5" cy="-27.0" r="2.7" fill="white"/><circle cx="-3.6" cy="-26.55" r="1.35" fill="#1b1f23"/><circle cx="5.4" cy="-26.55" r="1.35" fill="#1b1f23"/><circle cx="-3.15" cy="-27.0" r="0.54" fill="white"/><circle cx="5.8500000000000005" cy="-27.0" r="0.54" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-3.15,-21.6 3.15,-21.6 0,-17.1" fill="#f9826c"/>
+    <polygon points="-1.8,-21.150000000000002 1.8,-21.150000000000002 0,-18.45" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-13.5" y="-15.3" width="27.0" height="5.4" rx="2.7" fill="#e34c26" filter="url(#scarf_glow)"/>
+    <rect x="8.1" y="-15.3" width="4.5" height="12.6" rx="2.25" fill="#e34c26" filter="url(#scarf_glow)"/>
+    <rect x="-13.5" y="-15.3" width="27.0" height="2.25" rx="1.35" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    <ellipse cx="-7.2" cy="23.400000000000002" rx="5.4" ry="2.7" fill="#f9826c"/>
+    <ellipse cx="7.2" cy="23.400000000000002" rx="5.4" ry="2.7" fill="#f9826c"/>
+    <!-- Flippers -->
+    <ellipse cx="-18.0" cy="-1.8" rx="4.5" ry="12.6" fill="#1b1f23" transform="rotate(12)"/>
+    <ellipse cx="18.0" cy="-1.8" rx="4.5" ry="12.6" fill="#1b1f23" transform="rotate(-12)"/>
+  </g>
+  <!-- Label -->
+  <text x="125" y="317.8" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="9.0" fill="#e6edf3" font-weight="600">geist-pixel-font</text>
+  <text x="125" y="328.6" text-anchor="middle" font-family="monospace" font-size="8.1" fill="#f0883e">⭐ 24</text>
+  
+  
+<g transform="translate(255,280) rotate(0)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#6e7681" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#6e7681" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    <ellipse cx="-5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <ellipse cx="5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(12)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-12)"/>
+  </g>
+  <!-- Label -->
+  <text x="255" y="309.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">vercel-mcp-overv..</text>
+  <text x="255" y="317.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">⭐ 5</text>
+  
+  
+<g transform="translate(385,280) rotate(0)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    <ellipse cx="-5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <ellipse cx="5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(12)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-12)"/>
+  </g>
+  <!-- Label -->
+  <text x="385" y="309.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">nextjs-foundatio..</text>
+  <text x="385" y="317.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">⭐ 2</text>
+  
+  
+<g transform="translate(515,280) rotate(0)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    <ellipse cx="-5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <ellipse cx="5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(12)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-12)"/>
+  </g>
+  <!-- Label -->
+  <text x="515" y="309.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">academy-subscrip..</text>
+  <text x="515" y="317.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">⭐ 1</text>
+  
+  
+<g transform="translate(645,280) rotate(-20)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0;-2,-3;0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="37.8" rx="22.4" ry="5.6" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="25.2" ry="35.0" fill="#1b1f23"/>
+    <ellipse cx="-8.399999999999999" cy="-7.0" rx="5.6" ry="16.799999999999997" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="4.199999999999999" rx="16.799999999999997" ry="25.2" fill="white"/>
+    <ellipse cx="-2.8" cy="0.0" rx="11.2" ry="16.799999999999997" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-39.199999999999996" r="18.2" fill="#1b1f23"/>
+    <circle cx="-5.6" cy="-44.8" r="7.0" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-12.6" cy="-35.0" r="4.8999999999999995" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="12.6" cy="-35.0" r="4.8999999999999995" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-7.0" cy="-42.0" r="4.199999999999999" fill="white"/><circle cx="7.0" cy="-42.0" r="4.199999999999999" fill="white"/><circle cx="-5.6" cy="-41.3" r="2.0999999999999996" fill="#1b1f23"/><circle cx="8.399999999999999" cy="-41.3" r="2.0999999999999996" fill="#1b1f23"/><circle cx="-4.8999999999999995" cy="-42.0" r="0.84" fill="white"/><circle cx="9.1" cy="-42.0" r="0.84" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-4.8999999999999995,-33.599999999999994 4.8999999999999995,-33.599999999999994 0,-26.599999999999998" fill="#f9826c"/>
+    <polygon points="-2.8,-32.9 2.8,-32.9 0,-28.7" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-21.0" y="-23.799999999999997" width="42.0" height="8.399999999999999" rx="4.199999999999999" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="12.6" y="-23.799999999999997" width="7.0" height="19.599999999999998" rx="3.5" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-21.0" y="-23.799999999999997" width="42.0" height="3.5" rx="2.0999999999999996" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    
+    <!-- Flippers -->
+    <ellipse cx="-28.0" cy="-2.8" rx="7.0" ry="19.599999999999998" fill="#1b1f23" transform="rotate(-45)"/>
+    <ellipse cx="28.0" cy="-2.8" rx="7.0" ry="19.599999999999998" fill="#1b1f23" transform="rotate(45)"/>
+  </g>
+  <!-- Label -->
+  <text x="645" y="338.8" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="14.0" fill="#e6edf3" font-weight="600">chat</text>
+  <text x="645" y="355.6" text-anchor="middle" font-family="monospace" font-size="12.6" fill="#f0883e">⭐ 1124</text>
+  
+  <ellipse cx="645" cy="322.0" rx="33.599999999999994" ry="8.399999999999999" fill="#58a6ff" opacity="0.3"/>
+    <ellipse cx="633.8" cy="324.8" rx="25.2" ry="5.6" fill="#79c0ff" opacity="0.2"/>
+<g transform="translate(125,420) rotate(0)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="24.3" rx="14.4" ry="3.6" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="16.2" ry="22.5" fill="#1b1f23"/>
+    <ellipse cx="-5.4" cy="-4.5" rx="3.6" ry="10.8" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.7" rx="10.8" ry="16.2" fill="white"/>
+    <ellipse cx="-1.8" cy="0.0" rx="7.2" ry="10.8" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-25.2" r="11.700000000000001" fill="#1b1f23"/>
+    <circle cx="-3.6" cy="-28.8" r="4.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-8.1" cy="-22.5" r="3.15" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="8.1" cy="-22.5" r="3.15" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-4.5" cy="-27.0" r="2.7" fill="white"/><circle cx="4.5" cy="-27.0" r="2.7" fill="white"/><circle cx="-3.6" cy="-26.55" r="1.35" fill="#1b1f23"/><circle cx="5.4" cy="-26.55" r="1.35" fill="#1b1f23"/><circle cx="-3.15" cy="-27.0" r="0.54" fill="white"/><circle cx="5.8500000000000005" cy="-27.0" r="0.54" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-3.15,-21.6 3.15,-21.6 0,-17.1" fill="#f9826c"/>
+    <polygon points="-1.8,-21.150000000000002 1.8,-21.150000000000002 0,-18.45" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-13.5" y="-15.3" width="27.0" height="5.4" rx="2.7" fill="#6e7681" filter="url(#scarf_glow)"/>
+    <rect x="8.1" y="-15.3" width="4.5" height="12.6" rx="2.25" fill="#6e7681" filter="url(#scarf_glow)"/>
+    <rect x="-13.5" y="-15.3" width="27.0" height="2.25" rx="1.35" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    <ellipse cx="-7.2" cy="23.400000000000002" rx="5.4" ry="2.7" fill="#f9826c"/>
+    <ellipse cx="7.2" cy="23.400000000000002" rx="5.4" ry="2.7" fill="#f9826c"/>
+    <!-- Flippers -->
+    <ellipse cx="-18.0" cy="-1.8" rx="4.5" ry="12.6" fill="#1b1f23" transform="rotate(12)"/>
+    <ellipse cx="18.0" cy="-1.8" rx="4.5" ry="12.6" fill="#1b1f23" transform="rotate(-12)"/>
+  </g>
+  <!-- Label -->
+  <text x="125" y="457.8" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="9.0" fill="#e6edf3" font-weight="600">vercel-deploy-cl..</text>
+  <text x="125" y="468.6" text-anchor="middle" font-family="monospace" font-size="8.1" fill="#f0883e">⭐ 11</text>
+  
+  
+<g transform="translate(255,420) rotate(0)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    <ellipse cx="-5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <ellipse cx="5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(12)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-12)"/>
+  </g>
+  <!-- Label -->
+  <text x="255" y="449.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">v0-starter-templ..</text>
+  <text x="255" y="457.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">⭐ 1</text>
+  
+  
+<g transform="translate(385,420) rotate(0)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    <ellipse cx="-5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <ellipse cx="5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(12)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-12)"/>
+  </g>
+  <!-- Label -->
+  <text x="385" y="449.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">payload-vercel-w..</text>
+  <text x="385" y="457.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">🥚</text>
+  
+  
+<g transform="translate(515,420) rotate(0)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    <ellipse cx="-5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <ellipse cx="5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(12)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-12)"/>
+  </g>
+  <!-- Label -->
+  <text x="515" y="449.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">workflow-builder..</text>
+  <text x="515" y="457.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">⭐ 6</text>
+  
+  
+<g transform="translate(645,420) rotate(0)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    <ellipse cx="-5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <ellipse cx="5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(12)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-12)"/>
+  </g>
+  <!-- Label -->
+  <text x="645" y="449.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">production-monor..</text>
+  <text x="645" y="457.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">⭐ 5</text>
+  
+  
+<g transform="translate(125,560) rotate(0)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    <ellipse cx="-5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <ellipse cx="5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(12)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-12)"/>
+  </g>
+  <!-- Label -->
+  <text x="125" y="589.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">sign-in-with-ver..</text>
+  <text x="125" y="597.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">⭐ 2</text>
+  
+  
+<g transform="translate(255,560) rotate(0)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    <ellipse cx="-5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <ellipse cx="5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(12)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-12)"/>
+  </g>
+  <!-- Label -->
+  <text x="255" y="589.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">aws-aurora-postg..</text>
+  <text x="255" y="597.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">⭐ 3</text>
+  
+  
+<g transform="translate(385,560) rotate(0)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    <ellipse cx="-5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <ellipse cx="5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(12)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-12)"/>
+  </g>
+  <!-- Label -->
+  <text x="385" y="589.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">aws-dynamodb-demo</text>
+  <text x="385" y="597.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">🥚</text>
+  
+  
+<g transform="translate(515,560) rotate(-20)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0;-2,-3;0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="37.8" rx="22.4" ry="5.6" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="25.2" ry="35.0" fill="#1b1f23"/>
+    <ellipse cx="-8.399999999999999" cy="-7.0" rx="5.6" ry="16.799999999999997" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="4.199999999999999" rx="16.799999999999997" ry="25.2" fill="white"/>
+    <ellipse cx="-2.8" cy="0.0" rx="11.2" ry="16.799999999999997" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-39.199999999999996" r="18.2" fill="#1b1f23"/>
+    <circle cx="-5.6" cy="-44.8" r="7.0" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-12.6" cy="-35.0" r="4.8999999999999995" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="12.6" cy="-35.0" r="4.8999999999999995" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-7.0" cy="-42.0" r="4.199999999999999" fill="white"/><circle cx="7.0" cy="-42.0" r="4.199999999999999" fill="white"/><circle cx="-5.6" cy="-41.3" r="2.0999999999999996" fill="#1b1f23"/><circle cx="8.399999999999999" cy="-41.3" r="2.0999999999999996" fill="#1b1f23"/><circle cx="-4.8999999999999995" cy="-42.0" r="0.84" fill="white"/><circle cx="9.1" cy="-42.0" r="0.84" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-4.8999999999999995,-33.599999999999994 4.8999999999999995,-33.599999999999994 0,-26.599999999999998" fill="#f9826c"/>
+    <polygon points="-2.8,-32.9 2.8,-32.9 0,-28.7" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-21.0" y="-23.799999999999997" width="42.0" height="8.399999999999999" rx="4.199999999999999" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="12.6" y="-23.799999999999997" width="7.0" height="19.599999999999998" rx="3.5" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-21.0" y="-23.799999999999997" width="42.0" height="3.5" rx="2.0999999999999996" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    
+    <!-- Flippers -->
+    <ellipse cx="-28.0" cy="-2.8" rx="7.0" ry="19.599999999999998" fill="#1b1f23" transform="rotate(-45)"/>
+    <ellipse cx="28.0" cy="-2.8" rx="7.0" ry="19.599999999999998" fill="#1b1f23" transform="rotate(45)"/>
+  </g>
+  <!-- Label -->
+  <text x="515" y="618.8" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="14.0" fill="#e6edf3" font-weight="600">workflow</text>
+  <text x="515" y="635.6" text-anchor="middle" font-family="monospace" font-size="12.6" fill="#f0883e">⭐ 1767</text>
+  
+  <ellipse cx="515" cy="602.0" rx="33.599999999999994" ry="8.399999999999999" fill="#58a6ff" opacity="0.3"/>
+    <ellipse cx="503.8" cy="604.8" rx="25.2" ry="5.6" fill="#79c0ff" opacity="0.2"/>
+<g transform="translate(645,560) rotate(-20)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0;-2,-3;0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="29.700000000000003" rx="17.6" ry="4.4" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="19.8" ry="27.500000000000004" fill="#1b1f23"/>
+    <ellipse cx="-6.6000000000000005" cy="-5.5" rx="4.4" ry="13.200000000000001" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="3.3000000000000003" rx="13.200000000000001" ry="19.8" fill="white"/>
+    <ellipse cx="-2.2" cy="0.0" rx="8.8" ry="13.200000000000001" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-30.800000000000004" r="14.3" fill="#1b1f23"/>
+    <circle cx="-4.4" cy="-35.2" r="5.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-9.9" cy="-27.500000000000004" r="3.8500000000000005" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="9.9" cy="-27.500000000000004" r="3.8500000000000005" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-5.5" cy="-33.0" r="3.3000000000000003" fill="white"/><circle cx="5.5" cy="-33.0" r="3.3000000000000003" fill="white"/><circle cx="-4.4" cy="-32.45" r="1.6500000000000001" fill="#1b1f23"/><circle cx="6.6000000000000005" cy="-32.45" r="1.6500000000000001" fill="#1b1f23"/><circle cx="-3.8500000000000005" cy="-33.0" r="0.66" fill="white"/><circle cx="7.15" cy="-33.0" r="0.66" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-3.8500000000000005,-26.400000000000002 3.8500000000000005,-26.400000000000002 0,-20.900000000000002" fill="#f9826c"/>
+    <polygon points="-2.2,-25.85 2.2,-25.85 0,-22.55" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-16.5" y="-18.700000000000003" width="33.0" height="6.6000000000000005" rx="3.3000000000000003" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="9.9" y="-18.700000000000003" width="5.5" height="15.400000000000002" rx="2.75" fill="#3178c6" filter="url(#scarf_glow)"/>
+    <rect x="-16.5" y="-18.700000000000003" width="33.0" height="2.75" rx="1.6500000000000001" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    
+    <!-- Flippers -->
+    <ellipse cx="-22.0" cy="-2.2" rx="5.5" ry="15.400000000000002" fill="#1b1f23" transform="rotate(-45)"/>
+    <ellipse cx="22.0" cy="-2.2" rx="5.5" ry="15.400000000000002" fill="#1b1f23" transform="rotate(45)"/>
+  </g>
+  <!-- Label -->
+  <text x="645" y="606.2" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="11.0" fill="#e6edf3" font-weight="600">workflow-examples</text>
+  <text x="645" y="619.4" text-anchor="middle" font-family="monospace" font-size="9.9" fill="#f0883e">⭐ 426</text>
+  
+  <ellipse cx="645" cy="593.0" rx="26.400000000000002" ry="6.6000000000000005" fill="#58a6ff" opacity="0.3"/>
+    <ellipse cx="636.2" cy="595.2" rx="19.8" ry="4.4" fill="#79c0ff" opacity="0.2"/>
+
+  <!-- Legend -->
+  <rect x="50" y="713" width="670" height="22" rx="11" fill="#161b22" opacity="0.8" stroke="#30363d" stroke-width="0.5"/>
+  <text x="385" y="728" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">
+    📏 size = stars  ·  🧣 scarf = language  ·  🏊 pose = activity  ·  👻 opacity = fork
+  </text>
+</svg>
