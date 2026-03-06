@@ -26,7 +26,6 @@ ENV/
 .DS_Store
 
 # Generated output (keep examples/, ignore local test outputs)
-colony.svg
 /output/
 *.tmp.svg
 
