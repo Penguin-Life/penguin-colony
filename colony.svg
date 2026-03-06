@@ -1,0 +1,511 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="510" height="480" viewBox="0 0 510 480">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020817"/>
+      <stop offset="40%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#111d2e"/>
+    </linearGradient>
+    <linearGradient id="aurora1" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0%" stop-color="#00ff87" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00ff87" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#60efff" stop-opacity="0.18"/>
+      <stop offset="70%" stop-color="#7c5cfc" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ff6bcd" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="aurora2" x1="0.2" y1="0" x2="0.8" y2="0.5">
+      <stop offset="0%" stop-color="#60efff" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#60efff" stop-opacity="0.08"/>
+      <stop offset="60%" stop-color="#00ff87" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#60efff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ice_grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2744"/>
+      <stop offset="50%" stop-color="#0f1b2d"/>
+      <stop offset="100%" stop-color="#080e1a"/>
+    </linearGradient>
+    <linearGradient id="ice_top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1a2744" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="aurora_blur">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <filter id="scarf_glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="510" height="480" fill="url(#sky)"/>
+
+  <!-- Aurora Borealis -->
+  <ellipse cx="153.0" cy="40" rx="255.0" ry="60" fill="url(#aurora1)" filter="url(#aurora_blur)">
+    <animate attributeName="rx" values="255.0;280.5;229.5;255.0" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="40;50;35;40" dur="6s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="357.0" cy="55" rx="204.0" ry="45" fill="url(#aurora2)" filter="url(#aurora_blur)">
+    <animate attributeName="rx" values="204.0;178.5;229.5;204.0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="55;45;60;55" dur="7s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Stars -->
+  <circle cx="121" cy="40" r="1.2" fill="white" opacity="0.43">
+      <animate attributeName="opacity" values="0.43;0.08600000000000001;0.43" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="478" cy="65" r="0.7" fill="white" opacity="0.58">
+      <animate attributeName="opacity" values="0.58;0.11599999999999999;0.58" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="48" cy="17" r="1.2" fill="white" opacity="0.51">
+      <animate attributeName="opacity" values="0.51;0.10200000000000001;0.51" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="442" cy="11" r="1.2" fill="white" opacity="0.89">
+      <animate attributeName="opacity" values="0.89;0.17800000000000002;0.89" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="206" cy="48" r="1.4" fill="white" opacity="0.37">
+      <animate attributeName="opacity" values="0.37;0.074;0.37" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="274" cy="62" r="0.6" fill="white" opacity="0.41">
+      <animate attributeName="opacity" values="0.41;0.082;0.41" dur="2.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="447" cy="14" r="0.9" fill="white" opacity="0.82">
+      <animate attributeName="opacity" values="0.82;0.164;0.82" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="25" cy="6" r="1.6" fill="white" opacity="0.86">
+      <animate attributeName="opacity" values="0.86;0.17200000000000001;0.86" dur="4.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="85" cy="57" r="1.0" fill="white" opacity="0.43">
+      <animate attributeName="opacity" values="0.43;0.08600000000000001;0.43" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="30" cy="26" r="0.9" fill="white" opacity="0.89">
+      <animate attributeName="opacity" values="0.89;0.17800000000000002;0.89" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="401" cy="63" r="0.7" fill="white" opacity="0.72">
+      <animate attributeName="opacity" values="0.72;0.144;0.72" dur="3.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="401" cy="67" r="0.6" fill="white" opacity="0.48">
+      <animate attributeName="opacity" values="0.48;0.096;0.48" dur="4.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="296" cy="12" r="1.3" fill="white" opacity="0.33">
+      <animate attributeName="opacity" values="0.33;0.066;0.33" dur="3.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="257" cy="25" r="0.5" fill="white" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.12;0.6" dur="4.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="35" cy="13" r="1.2" fill="white" opacity="0.44">
+      <animate attributeName="opacity" values="0.44;0.08800000000000001;0.44" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="455" cy="36" r="1.1" fill="white" opacity="0.32">
+      <animate attributeName="opacity" values="0.32;0.064;0.32" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="336" cy="45" r="1.5" fill="white" opacity="0.42">
+      <animate attributeName="opacity" values="0.42;0.084;0.42" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="122" cy="38" r="0.9" fill="white" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.13999999999999999;0.7" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="161" cy="14" r="0.4" fill="white" opacity="0.67">
+      <animate attributeName="opacity" values="0.67;0.134;0.67" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="51" cy="14" r="1.0" fill="white" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.12;0.6" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="178" cy="13" r="1.5" fill="white" opacity="0.52">
+      <animate attributeName="opacity" values="0.52;0.10400000000000001;0.52" dur="2.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="426" cy="43" r="1.1" fill="white" opacity="0.89">
+      <animate attributeName="opacity" values="0.89;0.17800000000000002;0.89" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="4" cy="43" r="1.5" fill="white" opacity="0.36">
+      <animate attributeName="opacity" values="0.36;0.072;0.36" dur="4.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="135" cy="19" r="1.5" fill="white" opacity="0.75">
+      <animate attributeName="opacity" values="0.75;0.15000000000000002;0.75" dur="2.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="144" cy="31" r="1.3" fill="white" opacity="0.42">
+      <animate attributeName="opacity" values="0.42;0.084;0.42" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="135" cy="69" r="1.0" fill="white" opacity="0.84">
+      <animate attributeName="opacity" values="0.84;0.168;0.84" dur="4.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="47" cy="59" r="1.4" fill="white" opacity="0.33">
+      <animate attributeName="opacity" values="0.33;0.066;0.33" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="66" cy="38" r="0.6" fill="white" opacity="0.57">
+      <animate attributeName="opacity" values="0.57;0.11399999999999999;0.57" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="287" cy="6" r="0.5" fill="white" opacity="0.87">
+      <animate attributeName="opacity" values="0.87;0.17400000000000002;0.87" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="76" cy="9" r="1.4" fill="white" opacity="0.65">
+      <animate attributeName="opacity" values="0.65;0.13;0.65" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+    
+
+  <!-- Snow -->
+  <circle cx="327" cy="57" r="0.6" fill="white" opacity="0.34">
+      <animate attributeName="cy" from="57" to="117" dur="4.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.34;0.10200000000000001;0.34" dur="4.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="377" cy="52" r="1.9" fill="white" opacity="0.65">
+      <animate attributeName="cy" from="52" to="112" dur="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.65;0.195;0.65" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="216" cy="16" r="0.6" fill="white" opacity="0.31">
+      <animate attributeName="cy" from="16" to="76" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.31;0.093;0.31" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="13" cy="287" r="0.9" fill="white" opacity="0.52">
+      <animate attributeName="cy" from="287" to="347" dur="5.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.52;0.156;0.52" dur="5.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="112" cy="229" r="1.7" fill="white" opacity="0.6">
+      <animate attributeName="cy" from="229" to="289" dur="3.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.18;0.6" dur="3.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="412" cy="81" r="1.9" fill="white" opacity="0.37">
+      <animate attributeName="cy" from="81" to="141" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.37;0.111;0.37" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="490" cy="390" r="1.2" fill="white" opacity="0.25">
+      <animate attributeName="cy" from="390" to="450" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;0.075;0.25" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="433" cy="176" r="1.7" fill="white" opacity="0.6">
+      <animate attributeName="cy" from="176" to="236" dur="6.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.18;0.6" dur="6.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="274" cy="63" r="2.4" fill="white" opacity="0.39">
+      <animate attributeName="cy" from="63" to="123" dur="5.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.39;0.11699999999999999;0.39" dur="5.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="424" cy="321" r="1.7" fill="white" opacity="0.63">
+      <animate attributeName="cy" from="321" to="381" dur="5.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.63;0.189;0.63" dur="5.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="360" cy="35" r="0.6" fill="white" opacity="0.31">
+      <animate attributeName="cy" from="35" to="95" dur="4.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.31;0.093;0.31" dur="4.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="40" cy="119" r="2.2" fill="white" opacity="0.39">
+      <animate attributeName="cy" from="119" to="179" dur="5.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.39;0.11699999999999999;0.39" dur="5.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="427" cy="186" r="0.8" fill="white" opacity="0.38">
+      <animate attributeName="cy" from="186" to="246" dur="6.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.38;0.11399999999999999;0.38" dur="6.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="359" cy="349" r="1.8" fill="white" opacity="0.5">
+      <animate attributeName="cy" from="349" to="409" dur="3.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.15;0.5" dur="3.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="373" cy="125" r="0.8" fill="white" opacity="0.39">
+      <animate attributeName="cy" from="125" to="185" dur="7.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.39;0.11699999999999999;0.39" dur="7.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="327" cy="352" r="1.6" fill="white" opacity="0.54">
+      <animate attributeName="cy" from="352" to="412" dur="7.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.54;0.162;0.54" dur="7.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="397" cy="28" r="1.0" fill="white" opacity="0.22">
+      <animate attributeName="cy" from="28" to="88" dur="4.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.22;0.066;0.22" dur="4.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="137" cy="33" r="0.9" fill="white" opacity="0.67">
+      <animate attributeName="cy" from="33" to="93" dur="7.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.67;0.201;0.67" dur="7.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="161" cy="108" r="1.8" fill="white" opacity="0.4">
+      <animate attributeName="cy" from="108" to="168" dur="7.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.12;0.4" dur="7.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="234" cy="73" r="1.0" fill="white" opacity="0.32">
+      <animate attributeName="cy" from="73" to="133" dur="5.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.32;0.096;0.32" dur="5.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="134" cy="382" r="1.7" fill="white" opacity="0.65">
+      <animate attributeName="cy" from="382" to="442" dur="5.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.65;0.195;0.65" dur="5.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="112" cy="70" r="1.5" fill="white" opacity="0.25">
+      <animate attributeName="cy" from="70" to="130" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;0.075;0.25" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="56" cy="78" r="1.8" fill="white" opacity="0.6">
+      <animate attributeName="cy" from="78" to="138" dur="5.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.18;0.6" dur="5.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="32" cy="197" r="1.3" fill="white" opacity="0.7">
+      <animate attributeName="cy" from="197" to="257" dur="5.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.21;0.7" dur="5.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="497" cy="283" r="2.2" fill="white" opacity="0.21">
+      <animate attributeName="cy" from="283" to="343" dur="6.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.21;0.063;0.21" dur="6.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="349" cy="274" r="2.0" fill="white" opacity="0.58">
+      <animate attributeName="cy" from="274" to="334" dur="4.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.58;0.174;0.58" dur="4.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="222" r="0.8" fill="white" opacity="0.2">
+      <animate attributeName="cy" from="222" to="282" dur="6.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.06;0.2" dur="6.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="368" cy="134" r="2.4" fill="white" opacity="0.58">
+      <animate attributeName="cy" from="134" to="194" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.58;0.174;0.58" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="54" cy="320" r="1.1" fill="white" opacity="0.52">
+      <animate attributeName="cy" from="320" to="380" dur="6.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.52;0.156;0.52" dur="6.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="78" cy="191" r="2.0" fill="white" opacity="0.47">
+      <animate attributeName="cy" from="191" to="251" dur="6.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.47;0.141;0.47" dur="6.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="271" cy="0" r="1.7" fill="white" opacity="0.44">
+      <animate attributeName="cy" from="0" to="60" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.44;0.132;0.44" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="185" cy="413" r="1.1" fill="white" opacity="0.23">
+      <animate attributeName="cy" from="413" to="473" dur="7.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.23;0.069;0.23" dur="7.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="484" cy="40" r="0.7" fill="white" opacity="0.44">
+      <animate attributeName="cy" from="40" to="100" dur="3.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.44;0.132;0.44" dur="3.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="389" cy="272" r="2.0" fill="white" opacity="0.26">
+      <animate attributeName="cy" from="272" to="332" dur="5.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.26;0.078;0.26" dur="5.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="281" cy="84" r="1.0" fill="white" opacity="0.64">
+      <animate attributeName="cy" from="84" to="144" dur="5.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.64;0.192;0.64" dur="5.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="108" cy="276" r="2.0" fill="white" opacity="0.54">
+      <animate attributeName="cy" from="276" to="336" dur="6.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.54;0.162;0.54" dur="6.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="204" cy="343" r="1.8" fill="white" opacity="0.42">
+      <animate attributeName="cy" from="343" to="403" dur="5.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.42;0.126;0.42" dur="5.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="61" cy="126" r="0.9" fill="white" opacity="0.37">
+      <animate attributeName="cy" from="126" to="186" dur="5.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.37;0.111;0.37" dur="5.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="117" cy="301" r="0.9" fill="white" opacity="0.24">
+      <animate attributeName="cy" from="301" to="361" dur="6.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.24;0.072;0.24" dur="6.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="117" cy="34" r="2.3" fill="white" opacity="0.63">
+      <animate attributeName="cy" from="34" to="94" dur="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.63;0.189;0.63" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    
+
+  <!-- Ice terrain -->
+  <polygon points="0,480 0,426 20,423 40,431 60,433 80,423 100,433 120,428 140,429 160,425 180,433 200,435 220,426 240,429 260,427 280,427 300,435 320,422 340,427 360,432 380,435 400,429 420,430 440,427 460,425 480,434 500,423 520,437 510,480" fill="url(#ice_grad)"/>
+  <polygon points="0,480 0,426 20,423 40,431 60,433 80,423 100,433 120,428 140,429 160,425 180,433 200,435 220,426 240,429 260,427 280,427 300,435 320,422 340,427 360,432 380,435 400,429 420,430 440,427 460,425 480,434 500,423 520,437 510,480" fill="url(#ice_top)"/>
+
+  <!-- Title -->
+  <text x="255" y="35" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,sans-serif" font-size="18" fill="white" font-weight="bold" filter="url(#glow)">🐧 Penguin-Life&#x27;s Penguin Colony</text>
+  <text x="255" y="56" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">5 repos · 0 total stars</text>
+
+<g transform="translate(125,140) rotate(-20)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0;-2,-3;0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#3572A5" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#3572A5" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-45)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(45)"/>
+  </g>
+  <!-- Label -->
+  <text x="125" y="169.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">penguin-colony</text>
+  <text x="125" y="177.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">🥚</text>
+  
+  <ellipse cx="125" cy="161.0" rx="16.799999999999997" ry="4.199999999999999" fill="#58a6ff" opacity="0.3"/>
+    <ellipse cx="119.4" cy="162.4" rx="12.6" ry="2.8" fill="#79c0ff" opacity="0.2"/>
+<g transform="translate(255,140) rotate(-20)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0;-2,-3;0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#f1e05a" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#f1e05a" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-45)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(45)"/>
+  </g>
+  <!-- Label -->
+  <text x="255" y="169.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">meme-terminal</text>
+  <text x="255" y="177.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">🥚</text>
+  
+  <ellipse cx="255" cy="161.0" rx="16.799999999999997" ry="4.199999999999999" fill="#58a6ff" opacity="0.3"/>
+    <ellipse cx="249.4" cy="162.4" rx="12.6" ry="2.8" fill="#79c0ff" opacity="0.2"/>
+<g transform="translate(385,140) rotate(-20)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0;-2,-3;0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#89e051" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#89e051" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-45)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(45)"/>
+  </g>
+  <!-- Label -->
+  <text x="385" y="169.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">zenrows-skill</text>
+  <text x="385" y="177.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">🥚</text>
+  
+  <ellipse cx="385" cy="161.0" rx="16.799999999999997" ry="4.199999999999999" fill="#58a6ff" opacity="0.3"/>
+    <ellipse cx="379.4" cy="162.4" rx="12.6" ry="2.8" fill="#79c0ff" opacity="0.2"/>
+<g transform="translate(125,280) rotate(-20)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0;-2,-3;0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#89e051" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#89e051" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-45)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(45)"/>
+  </g>
+  <!-- Label -->
+  <text x="125" y="309.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">wagyu-skill</text>
+  <text x="125" y="317.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">🥚</text>
+  
+  <ellipse cx="125" cy="301.0" rx="16.799999999999997" ry="4.199999999999999" fill="#58a6ff" opacity="0.3"/>
+    <ellipse cx="119.4" cy="302.4" rx="12.6" ry="2.8" fill="#79c0ff" opacity="0.2"/>
+<g transform="translate(255,280) rotate(-20)" opacity="1.0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0;-2,-3;0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
+    <!-- Shadow -->
+    <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="12.6" ry="17.5" fill="#1b1f23"/>
+    <ellipse cx="-4.199999999999999" cy="-3.5" rx="2.8" ry="8.399999999999999" fill="#2a2f35" opacity="0.4"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="2.0999999999999996" rx="8.399999999999999" ry="12.6" fill="white"/>
+    <ellipse cx="-1.4" cy="0.0" rx="5.6" ry="8.399999999999999" fill="#f0f6fc" opacity="0.3"/>
+    <!-- Head -->
+    <circle cx="0" cy="-19.599999999999998" r="9.1" fill="#1b1f23"/>
+    <circle cx="-2.8" cy="-22.4" r="3.5" fill="#2a2f35" opacity="0.3"/>
+    <!-- Cheeks -->
+    <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
+    <!-- Eyes -->
+    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <!-- Beak -->
+    <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
+    <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
+    <!-- Scarf (with glow) -->
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="4.199999999999999" rx="2.0999999999999996" fill="#6e7681" filter="url(#scarf_glow)"/>
+    <rect x="6.3" y="-11.899999999999999" width="3.5" height="9.799999999999999" rx="1.75" fill="#6e7681" filter="url(#scarf_glow)"/>
+    <rect x="-10.5" y="-11.899999999999999" width="21.0" height="1.75" rx="1.0499999999999998" fill="white" opacity="0.2"/>
+    <!-- Feet -->
+    
+    <!-- Flippers -->
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-45)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(45)"/>
+  </g>
+  <!-- Label -->
+  <text x="255" y="309.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">Penguin-Life</text>
+  <text x="255" y="317.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">🥚</text>
+  
+  <ellipse cx="255" cy="301.0" rx="16.799999999999997" ry="4.199999999999999" fill="#58a6ff" opacity="0.3"/>
+    <ellipse cx="249.4" cy="302.4" rx="12.6" ry="2.8" fill="#79c0ff" opacity="0.2"/>
+
+  <!-- Legend -->
+  <rect x="50" y="433" width="410" height="22" rx="11" fill="#161b22" opacity="0.8" stroke="#30363d" stroke-width="0.5"/>
+  <text x="255" y="448" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">
+    📏 size = stars  ·  🧣 scarf = language  ·  🏊 pose = activity  ·  👻 opacity = fork
+  </text>
+</svg>
