@@ -6,3 +6,7 @@ build/
 .eggs/
 *.egg
 .venv/
+
+# Private city data — never commit
+city.json
+penguin-city/
