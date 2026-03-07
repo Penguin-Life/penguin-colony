@@ -1,0 +1,71 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.10", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Compile check
+        run: python -m py_compile colony.py
+
+      - name: Package compile check
+        run: |
+          for f in penguin_colony/*.py; do
+            python -m py_compile "$f"
+            echo "✅ $f"
+          done
+
+      - name: CLI --help
+        run: python -m penguin_colony --help
+
+      - name: CLI --version
+        run: python -m penguin_colony --version
+
+      - name: Generate SVG (dark)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python -m penguin_colony Penguin-Life -o /tmp/colony-dark.svg
+          test -s /tmp/colony-dark.svg
+          head -1 /tmp/colony-dark.svg | grep -q '<svg'
+          echo "✅ Dark SVG valid ($(wc -c < /tmp/colony-dark.svg) bytes)"
+
+      - name: Generate SVG (light)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python -m penguin_colony Penguin-Life --theme light -o /tmp/colony-light.svg
+          test -s /tmp/colony-light.svg
+          head -1 /tmp/colony-light.svg | grep -q '<svg'
+          echo "✅ Light SVG valid ($(wc -c < /tmp/colony-light.svg) bytes)"
+
+      - name: JSON output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python -m penguin_colony Penguin-Life --json | python -m json.tool > /dev/null
+          echo "✅ JSON output valid"
+
+      - name: Backwards compat (colony.py)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python colony.py Penguin-Life -o /tmp/colony-compat.svg
+          test -s /tmp/colony-compat.svg
+          echo "✅ colony.py backwards compat OK"

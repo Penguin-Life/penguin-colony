@@ -1,40 +1,8 @@
-# Python
 __pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.Python
+*.pyc
 *.egg-info/
 dist/
 build/
 .eggs/
 *.egg
-pip-wheel-metadata/
-
-# Virtual environments
 .venv/
-venv/
-env/
-ENV/
-
-# IDE / editors
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# Generated output (keep examples/, ignore local test outputs)
-/output/
-*.tmp.svg
-
-# Environment files
-.env
-.env.local
-*.env
-
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride

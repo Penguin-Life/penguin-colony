@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "penguin-colony"
+version = "1.1.0"
+description = "Visualize your GitHub repos as an adorable penguin colony SVG"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+authors = [{ name = "Penguin-Life" }]
+keywords = ["github", "visualization", "svg", "penguin", "profile", "readme"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Artistic Software",
+]
+
+[project.urls]
+Homepage = "https://github.com/Penguin-Life/penguin-colony"
+Repository = "https://github.com/Penguin-Life/penguin-colony"
+Issues = "https://github.com/Penguin-Life/penguin-colony/issues"
+
+[project.scripts]
+penguin-colony = "penguin_colony.cli:main"

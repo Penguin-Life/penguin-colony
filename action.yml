@@ -1,0 +1,61 @@
+name: "Penguin Colony"
+description: "Generate a penguin colony SVG from your GitHub repos"
+author: "Penguin-Life"
+
+branding:
+  icon: "image"
+  color: "blue"
+
+inputs:
+  username:
+    description: "GitHub username or org (default: repo owner)"
+    required: false
+    default: "${{ github.repository_owner }}"
+  token:
+    description: "GitHub token for API access"
+    required: false
+    default: "${{ github.token }}"
+  output:
+    description: "Output SVG file path"
+    required: false
+    default: "colony.svg"
+  max-repos:
+    description: "Maximum repos to display"
+    required: false
+    default: "50"
+  theme:
+    description: "Visual theme: dark or light"
+    required: false
+    default: "dark"
+  include-forks:
+    description: "Include forked repos"
+    required: false
+    default: "false"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.x"
+
+    - name: Generate colony
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.token }}
+      run: |
+        FORKS_FLAG=""
+        if [[ "${{ inputs.include-forks }}" == "true" ]]; then
+          FORKS_FLAG="--forks"
+        fi
+
+        python3 "${{ github.action_path }}/colony.py" \
+          "${{ inputs.username }}" \
+          --token "$GITHUB_TOKEN" \
+          --theme "${{ inputs.theme }}" \
+          -n "${{ inputs.max-repos }}" \
+          $FORKS_FLAG \
+          -o "${{ inputs.output }}"
+
+        echo "✅ Colony generated: $(wc -c < '${{ inputs.output }}') bytes"
