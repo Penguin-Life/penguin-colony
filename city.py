@@ -36,15 +36,53 @@ CITY_FILE = os.environ.get("PENGUIN_CITY_FILE",
     os.path.expanduser("~/.openclaw/workspace/penguin-city/city.json"))
 
 BUILDING_TYPES = {
-    "website":  {"icon": "🏪", "category": "commerce",  "base_xp": 10, "evolve": ["Stall", "Shop", "Mall", "Trade Hub"]},
-    "api":      {"icon": "🔨", "category": "industry",  "base_xp": 12, "evolve": ["Workshop", "Factory", "Refinery", "Tech Spire"]},
-    "bot":      {"icon": "🗼", "category": "military",  "base_xp": 15, "evolve": ["Watchtower", "Barracks", "Fortress", "Intelligence HQ"]},
-    "game":     {"icon": "🎮", "category": "entertainment", "base_xp": 8, "evolve": ["Arcade", "Arena", "Colosseum", "Wonder"]},
-    "tool":     {"icon": "⚙️", "category": "utility",   "base_xp": 10, "evolve": ["Shed", "Depot", "Warehouse", "Portal"]},
-    "blog":     {"icon": "📜", "category": "culture",   "base_xp": 6,  "evolve": ["Scroll Stand", "Library", "Archive", "Grand Library"]},
-    "repo":     {"icon": "📦", "category": "district",  "base_xp": 5,  "evolve": ["Tent", "Cabin", "House", "Manor"]},
-    "defi":     {"icon": "🏦", "category": "finance",   "base_xp": 20, "evolve": ["Money Changer", "Bank", "Vault", "Central Mint"]},
-    "infra":    {"icon": "🏗️", "category": "utility",   "base_xp": 14, "evolve": ["Scaffolding", "Foundation", "Tower", "Citadel"]},
+    # ── Commerce ──
+    "website":     {"icon": "🏪", "category": "commerce",      "base_xp": 10, "evolve": ["Stall", "Shop", "Mall", "Trade Hub"]},
+    "landing":     {"icon": "🪧", "category": "commerce",      "base_xp": 6,  "evolve": ["Signpost", "Billboard", "Showroom", "Grand Plaza"]},
+    "saas":        {"icon": "🏬", "category": "commerce",      "base_xp": 16, "evolve": ["Kiosk", "Store", "Department Store", "Empire HQ"]},
+    "mobile":      {"icon": "📱", "category": "commerce",      "base_xp": 12, "evolve": ["Phone Booth", "App Stand", "App Center", "App Megaplex"]},
+    "marketplace": {"icon": "🏛️", "category": "commerce",      "base_xp": 18, "evolve": ["Market Stall", "Bazaar", "Trading Post", "Grand Exchange"]},
+    # ── Industry ──
+    "api":         {"icon": "🔨", "category": "industry",      "base_xp": 12, "evolve": ["Workshop", "Factory", "Refinery", "Tech Spire"]},
+    "script":      {"icon": "📟", "category": "industry",      "base_xp": 8,  "evolve": ["Workbench", "Mill", "Foundry", "Automaton Core"]},
+    "contract":    {"icon": "📃", "category": "industry",      "base_xp": 18, "evolve": ["Forge", "Smeltery", "Reactor", "Arcane Forge"]},
+    # ── Military / Security ──
+    "bot":         {"icon": "🗼", "category": "military",      "base_xp": 15, "evolve": ["Watchtower", "Barracks", "Fortress", "Intelligence HQ"]},
+    "proxy":       {"icon": "🛡️", "category": "military",      "base_xp": 14, "evolve": ["Guard Post", "Garrison", "Stronghold", "Shadow Citadel"]},
+    "monitor":     {"icon": "📡", "category": "military",      "base_xp": 12, "evolve": ["Alarm Bell", "Signal Tower", "Radar Station", "Orbital Eye"]},
+    # ── Entertainment ──
+    "game":        {"icon": "🎮", "category": "entertainment", "base_xp": 8,  "evolve": ["Arcade", "Arena", "Colosseum", "Wonder"]},
+    "nft":         {"icon": "🖼️", "category": "entertainment", "base_xp": 10, "evolve": ["Gallery", "Museum", "Art Palace", "Louvre"]},
+    # ── Utility ──
+    "tool":        {"icon": "⚙️", "category": "utility",       "base_xp": 10, "evolve": ["Shed", "Depot", "Warehouse", "Portal"]},
+    "infra":       {"icon": "🏗️", "category": "utility",       "base_xp": 14, "evolve": ["Scaffolding", "Foundation", "Tower", "Citadel"]},
+    "extension":   {"icon": "🔌", "category": "utility",       "base_xp": 10, "evolve": ["Plug", "Socket", "Junction Box", "Power Grid"]},
+    # ── Culture ──
+    "blog":        {"icon": "📜", "category": "culture",       "base_xp": 6,  "evolve": ["Scroll Stand", "Library", "Archive", "Grand Library"]},
+    "forum":       {"icon": "🗣️", "category": "culture",       "base_xp": 8,  "evolve": ["Campfire", "Town Hall", "Senate", "Parliament"]},
+    "social":      {"icon": "💬", "category": "culture",       "base_xp": 10, "evolve": ["Message Board", "Chat Room", "Social Hub", "Network HQ"]},
+    "media":       {"icon": "🎬", "category": "culture",       "base_xp": 8,  "evolve": ["Stage", "Theater", "Studio", "Broadcast Tower"]},
+    # ── District (generic) ──
+    "repo":        {"icon": "📦", "category": "district",      "base_xp": 5,  "evolve": ["Tent", "Cabin", "House", "Manor"]},
+    # ── Finance ──
+    "defi":        {"icon": "🏦", "category": "finance",       "base_xp": 20, "evolve": ["Money Changer", "Bank", "Vault", "Central Mint"]},
+    "dex":         {"icon": "💱", "category": "finance",       "base_xp": 18, "evolve": ["Exchange Desk", "Trading Floor", "Stock Exchange", "Global Market"]},
+    "wallet":      {"icon": "👛", "category": "finance",       "base_xp": 14, "evolve": ["Coin Purse", "Safe Box", "Treasury", "Royal Vault"]},
+    "launchpad":   {"icon": "🚀", "category": "finance",       "base_xp": 16, "evolve": ["Launch Pad", "Rocket Bay", "Space Port", "Orbital Station"]},
+    # ── Education ──
+    "docs":        {"icon": "📚", "category": "education",     "base_xp": 8,  "evolve": ["Bookshelf", "Study Room", "Academy", "University"]},
+    "library":     {"icon": "📖", "category": "education",     "base_xp": 10, "evolve": ["Code Scroll", "SDK Lab", "Framework Hall", "Knowledge Spire"]},
+    "tutorial":    {"icon": "🎓", "category": "education",     "base_xp": 6,  "evolve": ["Classroom", "Lecture Hall", "Institute", "Grand Academy"]},
+    # ── Science / Analytics ──
+    "analytics":   {"icon": "📊", "category": "science",       "base_xp": 14, "evolve": ["Lab Bench", "Observatory", "Research Center", "Data Citadel"]},
+    "dashboard":   {"icon": "📈", "category": "science",       "base_xp": 12, "evolve": ["Chart Board", "Control Room", "Command Center", "Mission Control"]},
+    "indexer":     {"icon": "🔍", "category": "science",       "base_xp": 14, "evolve": ["Search Post", "Index Hall", "Data Mine", "Oracle Tower"]},
+    "oracle":      {"icon": "🔮", "category": "science",       "base_xp": 16, "evolve": ["Crystal Ball", "Divination Room", "Prophecy Hall", "Oracle Sanctum"]},
+    # ── Transport / Bridges ──
+    "bridge":      {"icon": "🌉", "category": "transport",     "base_xp": 16, "evolve": ["Rope Bridge", "Stone Bridge", "Suspension Bridge", "Rainbow Bridge"]},
+    "node":        {"icon": "🖧", "category": "transport",     "base_xp": 14, "evolve": ["Relay Post", "Node Station", "Network Hub", "Nexus Core"]},
+    # ── Government / DAO ──
+    "dao":         {"icon": "⚖️", "category": "government",    "base_xp": 16, "evolve": ["Council Fire", "Town Council", "Parliament", "World Senate"]},
 }
 
 TITLE_LADDER = [
@@ -427,18 +465,59 @@ def import_github(city, username):
         desc = (r.get("description") or "").lower()
         topics = r.get("topics", [])
         btype = "repo"
-        if any(w in desc for w in ["api", "server", "backend"]):
-            btype = "api"
-        elif any(w in desc for w in ["bot", "telegram", "discord"]):
-            btype = "bot"
-        elif any(w in desc for w in ["game", "play"]):
-            btype = "game"
-        elif any(w in desc for w in ["blog", "post", "write"]):
-            btype = "blog"
-        elif any(w in desc for w in ["tool", "cli", "util"]):
-            btype = "tool"
-        elif any(w in desc for w in ["defi", "swap", "token", "contract"]):
+        all_text = desc + " " + " ".join(topics)
+        if any(w in all_text for w in ["dao", "governance", "voting"]):
+            btype = "dao"
+        elif any(w in all_text for w in ["bridge", "cross-chain", "crosschain"]):
+            btype = "bridge"
+        elif any(w in all_text for w in ["dex", "amm", "liquidity pool"]):
+            btype = "dex"
+        elif any(w in all_text for w in ["wallet", "keystore", "signer"]):
+            btype = "wallet"
+        elif any(w in all_text for w in ["launchpad", "ido", "ico", "token sale"]):
+            btype = "launchpad"
+        elif any(w in all_text for w in ["nft", "erc721", "erc1155", "collectible"]):
+            btype = "nft"
+        elif any(w in all_text for w in ["defi", "swap", "yield", "stake", "lending"]):
             btype = "defi"
+        elif any(w in all_text for w in ["contract", "solidity", "smart contract", "hardhat", "foundry"]):
+            btype = "contract"
+        elif any(w in all_text for w in ["oracle", "price feed", "chainlink"]):
+            btype = "oracle"
+        elif any(w in all_text for w in ["indexer", "subgraph", "theGraph", "index"]):
+            btype = "indexer"
+        elif any(w in all_text for w in ["dashboard", "monitor", "grafana", "metrics"]):
+            btype = "dashboard"
+        elif any(w in all_text for w in ["analytics", "data", "analysis", "chart"]):
+            btype = "analytics"
+        elif any(w in all_text for w in ["api", "server", "backend", "rest", "graphql"]):
+            btype = "api"
+        elif any(w in all_text for w in ["bot", "telegram", "discord"]):
+            btype = "bot"
+        elif any(w in all_text for w in ["game", "play", "rpg", "arcade"]):
+            btype = "game"
+        elif any(w in all_text for w in ["docs", "documentation", "wiki"]):
+            btype = "docs"
+        elif any(w in all_text for w in ["tutorial", "learn", "course", "guide"]):
+            btype = "tutorial"
+        elif any(w in all_text for w in ["blog", "post", "write", "cms"]):
+            btype = "blog"
+        elif any(w in all_text for w in ["extension", "plugin", "addon", "chrome"]):
+            btype = "extension"
+        elif any(w in all_text for w in ["proxy", "vpn", "firewall", "security"]):
+            btype = "proxy"
+        elif any(w in all_text for w in ["mobile", "ios", "android", "react native", "flutter"]):
+            btype = "mobile"
+        elif any(w in all_text for w in ["saas", "platform", "service"]):
+            btype = "saas"
+        elif any(w in all_text for w in ["sdk", "library", "lib", "framework", "package"]):
+            btype = "library"
+        elif any(w in all_text for w in ["script", "automat", "cron", "batch"]):
+            btype = "script"
+        elif any(w in all_text for w in ["tool", "cli", "util"]):
+            btype = "tool"
+        elif any(w in all_text for w in ["social", "chat", "messag", "forum", "community"]):
+            btype = "social"
         elif r.get("has_pages"):
             btype = "website"
 
@@ -683,6 +762,26 @@ def render_svg(city):
             <rect x="{cx-bw//2}" y="{cy-bh}" width="{bw}" height="8" fill="{color1}" opacity="0.5"/>
             <line x1="{cx-bw//4}" y1="{cy-bh+8}" x2="{cx-bw//4}" y2="{cy}" stroke="{color2}" stroke-width="1" opacity="0.3"/>
             <line x1="{cx+bw//4}" y1="{cy-bh+8}" x2="{cx+bw//4}" y2="{cy}" stroke="{color2}" stroke-width="1" opacity="0.3"/>'''
+        elif cat == "education":
+            building_shape = f'''
+            <rect x="{cx-bw//2}" y="{cy-bh}" width="{bw}" height="{bh}" rx="4" fill="#1e293b" stroke="{color1}" stroke-width="1.5" filter="url(#building_shadow)"/>
+            <polygon points="{cx-bw//2},{cy-bh} {cx},{cy-bh-14} {cx+bw//2},{cy-bh}" fill="#374151" stroke="{color1}" stroke-width="1"/>
+            <rect x="{cx-3}" y="{cy-bh-14}" width="6" height="10" fill="{color1}" opacity="0.6"/>'''
+        elif cat == "science":
+            building_shape = f'''
+            <rect x="{cx-bw//2}" y="{cy-bh}" width="{bw}" height="{bh}" rx="3" fill="#1e293b" stroke="{color1}" stroke-width="1.5" filter="url(#building_shadow)"/>
+            <circle cx="{cx}" cy="{cy-bh-8}" r="{bw//5}" fill="none" stroke="{color1}" stroke-width="1.5" opacity="0.6"/>
+            <circle cx="{cx}" cy="{cy-bh-8}" r="{bw//10}" fill="{color1}" opacity="0.3"/>'''
+        elif cat == "transport":
+            building_shape = f'''
+            <rect x="{cx-bw//2}" y="{cy-bh}" width="{bw}" height="{bh}" rx="3" fill="#1e293b" stroke="{color1}" stroke-width="1.5" filter="url(#building_shadow)"/>
+            <path d="M{cx-bw//2} {cy-bh//2} Q{cx} {cy-bh//2-15} {cx+bw//2} {cy-bh//2}" fill="none" stroke="{color1}" stroke-width="2" opacity="0.5"/>'''
+        elif cat == "government":
+            building_shape = f'''
+            <rect x="{cx-bw//2}" y="{cy-bh}" width="{bw}" height="{bh}" fill="#1e293b" stroke="{color1}" stroke-width="1.5" filter="url(#building_shadow)"/>
+            <rect x="{cx-bw//2-4}" y="{cy-bh}" width="{bw+8}" height="6" fill="{color1}" opacity="0.5"/>
+            <line x1="{cx-bw//3}" y1="{cy-bh+6}" x2="{cx-bw//3}" y2="{cy-4}" stroke="{color2}" stroke-width="2" opacity="0.4"/>
+            <line x1="{cx+bw//3}" y1="{cy-bh+6}" x2="{cx+bw//3}" y2="{cy-4}" stroke="{color2}" stroke-width="2" opacity="0.4"/>'''
         else:
             building_shape = f'''
             <rect x="{cx-bw//2}" y="{cy-bh}" width="{bw}" height="{bh}" rx="3" fill="#1e293b" stroke="{color1}" stroke-width="1.5" filter="url(#building_shadow)"/>'''
@@ -745,7 +844,7 @@ def main():
     # add
     p_add = sub.add_parser("add", help="Add a building")
     p_add.add_argument("name", help="Building name")
-    p_add.add_argument("--type", default="repo", choices=list(BUILDING_TYPES.keys()))
+    p_add.add_argument("--type", "-t", default="repo", choices=sorted(BUILDING_TYPES.keys()))
     p_add.add_argument("--url", default=None)
     p_add.add_argument("--server", default=None)
     p_add.add_argument("--path", default=None)

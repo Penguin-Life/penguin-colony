@@ -114,15 +114,53 @@ const DEMO = {
 };
 
 var BUILDING_TYPES = {
-  website:  { icon: "🏪", color: "#3b82f6", roofColor: "#2563eb", category: "commerce" },
-  api:      { icon: "🔨", color: "#8b5cf6", roofColor: "#7c3aed", category: "industry" },
-  bot:      { icon: "🗼", color: "#ef4444", roofColor: "#dc2626", category: "military" },
-  game:     { icon: "🎮", color: "#10b981", roofColor: "#059669", category: "entertainment" },
-  tool:     { icon: "⚙️", color: "#6366f1", roofColor: "#4f46e5", category: "utility" },
-  blog:     { icon: "📜", color: "#f59e0b", roofColor: "#d97706", category: "culture" },
-  repo:     { icon: "📦", color: "#64748b", roofColor: "#475569", category: "district" },
-  defi:     { icon: "🏦", color: "#eab308", roofColor: "#ca8a04", category: "finance" },
-  infra:    { icon: "🏗️", color: "#06b6d4", roofColor: "#0891b2", category: "utility" },
+  // Commerce
+  website:     { icon: "🏪", color: "#3b82f6", roofColor: "#2563eb", category: "commerce" },
+  landing:     { icon: "🪧", color: "#38bdf8", roofColor: "#0284c7", category: "commerce" },
+  saas:        { icon: "🏬", color: "#2563eb", roofColor: "#1d4ed8", category: "commerce" },
+  mobile:      { icon: "📱", color: "#0ea5e9", roofColor: "#0369a1", category: "commerce" },
+  marketplace: { icon: "🏛️", color: "#6366f1", roofColor: "#4f46e5", category: "commerce" },
+  // Industry
+  api:         { icon: "🔨", color: "#8b5cf6", roofColor: "#7c3aed", category: "industry" },
+  script:      { icon: "📟", color: "#a78bfa", roofColor: "#7c3aed", category: "industry" },
+  contract:    { icon: "📃", color: "#c084fc", roofColor: "#9333ea", category: "industry" },
+  // Military
+  bot:         { icon: "🗼", color: "#ef4444", roofColor: "#dc2626", category: "military" },
+  proxy:       { icon: "🛡️", color: "#f87171", roofColor: "#ef4444", category: "military" },
+  monitor:     { icon: "📡", color: "#fb923c", roofColor: "#ea580c", category: "military" },
+  // Entertainment
+  game:        { icon: "🎮", color: "#10b981", roofColor: "#059669", category: "entertainment" },
+  nft:         { icon: "🖼️", color: "#34d399", roofColor: "#10b981", category: "entertainment" },
+  // Utility
+  tool:        { icon: "⚙️", color: "#6366f1", roofColor: "#4f46e5", category: "utility" },
+  infra:       { icon: "🏗️", color: "#06b6d4", roofColor: "#0891b2", category: "utility" },
+  extension:   { icon: "🔌", color: "#818cf8", roofColor: "#6366f1", category: "utility" },
+  // Culture
+  blog:        { icon: "📜", color: "#f59e0b", roofColor: "#d97706", category: "culture" },
+  forum:       { icon: "🗣️", color: "#fbbf24", roofColor: "#f59e0b", category: "culture" },
+  social:      { icon: "💬", color: "#fcd34d", roofColor: "#fbbf24", category: "culture" },
+  media:       { icon: "🎬", color: "#f97316", roofColor: "#ea580c", category: "culture" },
+  // District
+  repo:        { icon: "📦", color: "#64748b", roofColor: "#475569", category: "district" },
+  // Finance
+  defi:        { icon: "🏦", color: "#eab308", roofColor: "#ca8a04", category: "finance" },
+  dex:         { icon: "💱", color: "#facc15", roofColor: "#eab308", category: "finance" },
+  wallet:      { icon: "👛", color: "#fde047", roofColor: "#facc15", category: "finance" },
+  launchpad:   { icon: "🚀", color: "#a3e635", roofColor: "#84cc16", category: "finance" },
+  // Education
+  docs:        { icon: "📚", color: "#14b8a6", roofColor: "#0d9488", category: "education" },
+  library:     { icon: "📖", color: "#2dd4bf", roofColor: "#14b8a6", category: "education" },
+  tutorial:    { icon: "🎓", color: "#5eead4", roofColor: "#2dd4bf", category: "education" },
+  // Science
+  analytics:   { icon: "📊", color: "#a855f7", roofColor: "#9333ea", category: "science" },
+  dashboard:   { icon: "📈", color: "#c084fc", roofColor: "#a855f7", category: "science" },
+  indexer:     { icon: "🔍", color: "#d946ef", roofColor: "#c026d3", category: "science" },
+  oracle:      { icon: "🔮", color: "#e879f9", roofColor: "#d946ef", category: "science" },
+  // Transport
+  bridge:      { icon: "🌉", color: "#22d3ee", roofColor: "#06b6d4", category: "transport" },
+  node:        { icon: "🖧", color: "#67e8f9", roofColor: "#22d3ee", category: "transport" },
+  // Government
+  dao:         { icon: "⚖️", color: "#fca5a5", roofColor: "#f87171", category: "government" },
 };
 var TW=64, TH=32;
 var canvas=document.getElementById('game'), ctx=canvas.getContext('2d');
@@ -609,16 +647,18 @@ function drawBuildingSprite(sx,sy,b,isHovered){
   }
 
   // Draw by type
-  switch(b.type){
-    case'website': drawShop(sx,sy,z,lv,lit,bt.color); break;
-    case'bot': drawTower(sx,sy,z,lv,lit,bt.color); break;
-    case'api':case'infra': drawFactory(sx,sy,z,lv,lit,bt.color); break;
-    case'game': drawArcade(sx,sy,z,lv,lit); break;
-    case'defi': drawBank(sx,sy,z,lv,lit); break;
-    case'blog': drawLibrary(sx,sy,z,lv,lit); break;
-    case'tool': drawWorkshop(sx,sy,z,lv,lit); break;
-    default: drawCabin(sx,sy,z,lv,lit); break;
-  }
+  // Map types to sprite drawers by category
+  const cat = bt.category;
+  if(cat==='commerce') drawShop(sx,sy,z,lv,lit,bt.color);
+  else if(cat==='military') drawTower(sx,sy,z,lv,lit,bt.color);
+  else if(cat==='industry') drawFactory(sx,sy,z,lv,lit,bt.color);
+  else if(cat==='entertainment') drawArcade(sx,sy,z,lv,lit);
+  else if(cat==='finance') drawBank(sx,sy,z,lv,lit);
+  else if(cat==='culture'||cat==='education') drawLibrary(sx,sy,z,lv,lit);
+  else if(cat==='utility'||cat==='science') drawWorkshop(sx,sy,z,lv,lit);
+  else if(cat==='transport') drawFactory(sx,sy,z,lv,lit,bt.color);
+  else if(cat==='government') drawBank(sx,sy,z,lv,lit);
+  else drawCabin(sx,sy,z,lv,lit);
 
   if(isHovered) ctx.restore();
 
@@ -785,7 +825,20 @@ function updateTT(){
   const b=hovered.b,bt=BUILDING_TYPES[b.type]||BUILDING_TYPES.repo;
   const lv2=lvl(b.xp||0),st=status(b.last_active);
   const sl={alive:'🟢 Thriving',ok:'🟡 Active',idle:'🟠 Idle',dead:'🔴 Abandoned'};
-  const ev={website:["Stall","Shop","Mall","Trade Hub"],api:["Workshop","Factory","Refinery","Tech Spire"],bot:["Watchtower","Barracks","Fortress","Intel HQ"],game:["Arcade","Arena","Colosseum","Wonder"],tool:["Shed","Depot","Warehouse","Portal"],blog:["Scroll Stand","Library","Archive","Grand Library"],repo:["Tent","Cabin","House","Manor"],defi:["Money Changer","Bank","Vault","Central Mint"],infra:["Scaffolding","Foundation","Tower","Citadel"]};
+  const ev={
+    website:["Stall","Shop","Mall","Trade Hub"],landing:["Signpost","Billboard","Showroom","Grand Plaza"],saas:["Kiosk","Store","Dept Store","Empire HQ"],mobile:["Phone Booth","App Stand","App Center","Megaplex"],marketplace:["Market Stall","Bazaar","Trading Post","Grand Exchange"],
+    api:["Workshop","Factory","Refinery","Tech Spire"],script:["Workbench","Mill","Foundry","Automaton Core"],contract:["Forge","Smeltery","Reactor","Arcane Forge"],
+    bot:["Watchtower","Barracks","Fortress","Intel HQ"],proxy:["Guard Post","Garrison","Stronghold","Shadow Citadel"],monitor:["Alarm Bell","Signal Tower","Radar Station","Orbital Eye"],
+    game:["Arcade","Arena","Colosseum","Wonder"],nft:["Gallery","Museum","Art Palace","Louvre"],
+    tool:["Shed","Depot","Warehouse","Portal"],infra:["Scaffolding","Foundation","Tower","Citadel"],extension:["Plug","Socket","Junction Box","Power Grid"],
+    blog:["Scroll Stand","Library","Archive","Grand Library"],forum:["Campfire","Town Hall","Senate","Parliament"],social:["Msg Board","Chat Room","Social Hub","Network HQ"],media:["Stage","Theater","Studio","Broadcast Tower"],
+    repo:["Tent","Cabin","House","Manor"],
+    defi:["Money Changer","Bank","Vault","Central Mint"],dex:["Exchange Desk","Trading Floor","Stock Exchange","Global Market"],wallet:["Coin Purse","Safe Box","Treasury","Royal Vault"],launchpad:["Launch Pad","Rocket Bay","Space Port","Orbital Station"],
+    docs:["Bookshelf","Study Room","Academy","University"],library:["Code Scroll","SDK Lab","Framework Hall","Knowledge Spire"],tutorial:["Classroom","Lecture Hall","Institute","Grand Academy"],
+    analytics:["Lab Bench","Observatory","Research Center","Data Citadel"],dashboard:["Chart Board","Control Room","Command Center","Mission Control"],indexer:["Search Post","Index Hall","Data Mine","Oracle Tower"],oracle:["Crystal Ball","Divination Room","Prophecy Hall","Oracle Sanctum"],
+    bridge:["Rope Bridge","Stone Bridge","Suspension Bridge","Rainbow Bridge"],node:["Relay Post","Node Station","Network Hub","Nexus Core"],
+    dao:["Council Fire","Town Council","Parliament","World Senate"],
+  };
   const en=(ev[b.type]||ev.repo)[lv2-1];
   const nx=lv2>=4?'MAX':[30,80,200][lv2-1];
   const pct=nx==='MAX'?100:Math.min(100,((b.xp||0)/nx)*100);
