@@ -310,7 +310,7 @@
 
   <!-- Title -->
   <text x="255" y="35" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,sans-serif" font-size="18" fill="white" font-weight="bold" filter="url(#glow)">🐧 Penguin-Life&#x27;s Penguin Colony</text>
-  <text x="255" y="56" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">5 repos · 0 total stars</text>
+  <text x="255" y="56" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">5 repos · 1 total stars</text>
 
 <g transform="translate(125,140) rotate(-20)" opacity="1.0">
     <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0;-2,-3;0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
@@ -419,7 +419,7 @@
   </g>
   <!-- Label -->
   <text x="385" y="169.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">meme-terminal</text>
-  <text x="385" y="177.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">🥚</text>
+  <text x="385" y="177.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">⭐ 1</text>
   
   <ellipse cx="385" cy="161.0" rx="16.799999999999997" ry="4.199999999999999" fill="#58a6ff" opacity="0.3"/>
     <ellipse cx="379.4" cy="162.4" rx="12.6" ry="2.8" fill="#79c0ff" opacity="0.2"/>
