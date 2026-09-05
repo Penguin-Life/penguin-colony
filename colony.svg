@@ -423,8 +423,8 @@
   <text x="385" y="177.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">⭐ 4</text>
   
   
-<g transform="translate(125,280) rotate(0)" opacity="1.0">
-    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+<g transform="translate(125,280) rotate(8)" opacity="1.0">
+    
     <!-- Shadow -->
     <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
     <!-- Body -->
@@ -440,7 +440,7 @@
     <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
     <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
     <!-- Eyes -->
-    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <path d="M-5.6,-20.299999999999997 Q-3.5,-18.9 -1.4,-20.299999999999997" stroke="white" stroke-width="1.26" fill="none" stroke-linecap="round"/><path d="M1.4,-20.299999999999997 Q3.5,-18.9 5.6,-20.299999999999997" stroke="white" stroke-width="1.26" fill="none" stroke-linecap="round"/>
     <!-- Beak -->
     <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
     <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
@@ -452,16 +452,18 @@
     <ellipse cx="-5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
     <ellipse cx="5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
     <!-- Flippers -->
-    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(12)"/>
-    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-12)"/>
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(5)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-5)"/>
   </g>
   <!-- Label -->
   <text x="125" y="309.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">zenrows-skill</text>
   <text x="125" y="317.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">🥚</text>
+  <text x="140.4" y="246.4" font-size="7.699999999999999" fill="#8b949e" font-weight="bold" opacity="0.8">z</text>
+    <text x="147.4" y="239.4" font-size="9.799999999999999" fill="#8b949e" font-weight="bold" opacity="0.55">z</text>
+    <text x="153.0" y="233.8" font-size="11.899999999999999" fill="#8b949e" font-weight="bold" opacity="0.3">z</text>
   
-  
-<g transform="translate(255,280) rotate(0)" opacity="1.0">
-    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite" additive="sum"/>
+<g transform="translate(255,280) rotate(8)" opacity="1.0">
+    
     <!-- Shadow -->
     <ellipse cx="0" cy="18.9" rx="11.2" ry="2.8" fill="black" opacity="0.3"/>
     <!-- Body -->
@@ -477,7 +479,7 @@
     <circle cx="-6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
     <circle cx="6.3" cy="-17.5" r="2.4499999999999997" fill="#ff9fb3" opacity="0.35"/>
     <!-- Eyes -->
-    <circle cx="-3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="3.5" cy="-21.0" r="2.0999999999999996" fill="white"/><circle cx="-2.8" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="4.199999999999999" cy="-20.65" r="1.0499999999999998" fill="#1b1f23"/><circle cx="-2.4499999999999997" cy="-21.0" r="0.42" fill="white"/><circle cx="4.55" cy="-21.0" r="0.42" fill="white"/>
+    <path d="M-5.6,-20.299999999999997 Q-3.5,-18.9 -1.4,-20.299999999999997" stroke="white" stroke-width="1.26" fill="none" stroke-linecap="round"/><path d="M1.4,-20.299999999999997 Q3.5,-18.9 5.6,-20.299999999999997" stroke="white" stroke-width="1.26" fill="none" stroke-linecap="round"/>
     <!-- Beak -->
     <polygon points="-2.4499999999999997,-16.799999999999997 2.4499999999999997,-16.799999999999997 0,-13.299999999999999" fill="#f9826c"/>
     <polygon points="-1.4,-16.45 1.4,-16.45 0,-14.35" fill="#ffb499" opacity="0.4"/>
@@ -489,13 +491,15 @@
     <ellipse cx="-5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
     <ellipse cx="5.6" cy="18.2" rx="4.199999999999999" ry="2.0999999999999996" fill="#f9826c"/>
     <!-- Flippers -->
-    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(12)"/>
-    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-12)"/>
+    <ellipse cx="-14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(5)"/>
+    <ellipse cx="14.0" cy="-1.4" rx="3.5" ry="9.799999999999999" fill="#1b1f23" transform="rotate(-5)"/>
   </g>
   <!-- Label -->
   <text x="255" y="309.4" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="7.0" fill="#e6edf3" font-weight="600">wagyu-skill</text>
   <text x="255" y="317.8" text-anchor="middle" font-family="monospace" font-size="6.3" fill="#f0883e">🥚</text>
-  
+  <text x="270.4" y="246.4" font-size="7.699999999999999" fill="#8b949e" font-weight="bold" opacity="0.8">z</text>
+    <text x="277.4" y="239.4" font-size="9.799999999999999" fill="#8b949e" font-weight="bold" opacity="0.55">z</text>
+    <text x="283.0" y="233.8" font-size="11.899999999999999" fill="#8b949e" font-weight="bold" opacity="0.3">z</text>
   
 
   <!-- Legend -->
